@@ -15,3 +15,89 @@ git config user.email 'taegyun0731@gmail.com'
 3.본인계정 확인
 git config user.name
 git config user.email
+
+4. 배포할 오리진 저장소 등록
+git remote add origin https://github.com/Taegyun-Jeong/kurly10.git
+
+5. 확인
+git remote -v
+origin  https://github.com/Taegyun-Jeong/kurly10.git (fetch)
+origin  https://github.com/Taegyun-Jeong/kurly10.git (push)
+
+6. 스테이징
+올리고자하는 파일 선택
+git add .
+
+7. 커밋
+git commit -m '쇼핑몰 마켓컬리 배포'
+
+8. 푸쉬 (최종 올리기)
+git push origin master
+
+
+9. 깃허브 푸쉬한 저장소에서 새로고침
+
+10. 아래로 스크롤 Deployment
+    URL 주소 클릭 이동
+    https://facebook.github.io/create-react-app/docs/deployment
+
+
+11. Deployment 사이트에서 GitHun Pages 를 검색
+
+12. 배포할 홈페이지 주소를 패키지 제이슨에 추가한다.
+    
+    Step 1: Add homepage to package.json
+
+        Settings => Pages => GitHub Pages => Branch => master 선택 => save클릭 => 새로고침
+        => 배포주소 : https://taegyun-jeong.github.io/kurly10/
+
+      "homepage": "https://myusername.github.io/my-app"
+      "homepage": "https://taegyun-jeong.github.io/kurly10"
+
+      
+13. 홈페이지주소를 package.json 안에 붙여넣는다.
+
+14. 설치 gh-pages
+
+    Step 2: Install gh-pages and add deploy to scripts in package.json
+
+    npm install --save gh-pages  //  npm i gh-pages
+
+    <package.json 스크립트 확인!>
+
+    "dependencies" >> "gh-pages":~~ (확인)
+
+15. package.json에 "predeploy", "deploy" 추가하기
+
+  "scripts": {
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
+
+16. Step 3: Deploy the site by running npm run deploy
+
+    *npm run deploy
+
+        > kurly@0.1.0 deploy
+        > gh-pages -b master -d build
+
+        Published
+
+    퍼블리시드 나오면 성공!
+
+17. 깃허브에서 새로고침
+그러면 배포판으로 변경된걸 볼수 있다.
+(배포중에)
+src 가 stactic (동적>정적)으로 바뀐다.
+
+18. Settings
+
+19. Pages
+
+20. 
+        Settings => Pages => GitHub Pages => Branch => master 선택 => save클릭 => 새로고침
+        => 배포주소 : https://taegyun-jeong.github.io/kurly10/
+
+Visit Site => 클릭
+
+홈페이지 나타남

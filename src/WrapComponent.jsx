@@ -219,7 +219,8 @@ export default function WrapComponent() {
                 <BrowserRouter basename={process.env.PUBLIC_URL}>
                     <Routes>
                         <Route path='/' element={<HeaderComponent  addressSearchOpen={addressSearchOpen} 주소1={address.주소1}  주소2={address.주소2} />}>
-                            <Route path='/' element={<MainComponent  currentViewProduct={currentViewProduct} />}/>
+                            <Route index element={<MainComponent  currentViewProduct={currentViewProduct} />}/>
+                            <Route path='/index' element={<MainComponent  currentViewProduct={currentViewProduct} />}/>
                             <Route path='/sub1' element={<Sub1Component   currentViewProduct={currentViewProduct} />}/>
                             <Route path='/sub2' element={<Sub2Component   currentViewProduct={currentViewProduct} />}/>
                             <Route path='/sub3' element={<Sub3Component   currentViewProduct={currentViewProduct} />}/>

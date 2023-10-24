@@ -121,7 +121,7 @@ export default function HeaderComponent({addressSearchOpen, 주소1, 주소2 }) 
             <div className="row2">
                     <div className="container">
                         <div className="left">
-                            <h1><Link to="/"><img src="./img/intro/icon_logo.svg" alt="" /><strong>마켓컬리</strong></Link></h1>
+                            <h1><Link to="/index"><img src="./img/intro/icon_logo.svg" alt="" /><strong>마켓컬리</strong></Link></h1>
                             <span><i>|</i></span>
                             <a href="!#"><span>뷰티컬리<img src="./img/intro/icon_n.svg" alt="" /></span></a>
                         </div>

@@ -711,7 +711,7 @@ export default function Sub5Component({회원가입, confirmModalOpen,isConfirmM
                         setTimeout(() => {
                             //window.location.pathname = '/';
                             //라우터 네비게이터 사용
-                            navigate('/');  // 홈으로 이동
+                            navigate('/index');  // 홈으로 이동
                         }, 2000);
                     }   
                     else{
