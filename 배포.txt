@@ -1,0 +1,17 @@
+깃허브 배포 : https://github.com/Taegyun-Jeong/kurly10.git ()
+
+
+Taegyun-Jeong
+taegyun0731@gmail.com
+Gjdxorbs1!
+
+1. 깃설정
+git init
+
+2. 깃 환경설정
+git config user.name 'Taegyun-Jeong'
+git config user.email 'taegyun0731@gmail.com'
+
+3.본인계정 확인
+git config user.name
+git config user.email
