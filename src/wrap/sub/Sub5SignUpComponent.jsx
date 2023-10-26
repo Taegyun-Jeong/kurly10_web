@@ -69,7 +69,7 @@ export default function Sub5Component({회원가입, confirmModalOpen,isConfirmM
             formData.append('id', 아이디);
 
             axios({
-                url:'http://taegyun0731.dothome.co.kr/kurly10/select_id_check.php',
+                url:'https://taegyun0731.dothome.co.kr/kurly10/select_id_check.php',
                 method:'POST',
                 data: formData  // axios 폼데이터 형식으로 전송
             })
@@ -232,7 +232,7 @@ export default function Sub5Component({회원가입, confirmModalOpen,isConfirmM
             formData.append('email', 이메일);
 
             axios({
-                url:'http://taegyun0731.dothome.co.kr/kurly10/select_email_check.php',
+                url:'https://taegyun0731.dothome.co.kr/kurly10/select_email_check.php',
                 method:'POST',
                 data: formData
             })
@@ -550,7 +550,7 @@ export default function Sub5Component({회원가입, confirmModalOpen,isConfirmM
         formData.append('id', 추천인아이디);
 
         axios({
-            url:'http://taegyun0731.dothome.co.kr/kurly10/select_choochun_id_check.php',
+            url:'https://taegyun0731.dothome.co.kr/kurly10/select_choochun_id_check.php',
             method:'POST',
             data: formData
         })
@@ -700,7 +700,7 @@ export default function Sub5Component({회원가입, confirmModalOpen,isConfirmM
             formData.append("service", 이용약관동의);
 
             axios({
-                url:'http://taegyun0731.dothome.co.kr/kurly10/signup.php', // 서버사이드 스크립트 언어 파일  signup.php
+                url:'https://taegyun0731.dothome.co.kr/kurly10/signup.php', // 서버사이드 스크립트 언어 파일  signup.php
                 method:'POST',
                 data: formData
             })
